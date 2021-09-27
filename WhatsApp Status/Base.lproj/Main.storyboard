@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F2L-5E-pMb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quote List View Controller-->
+        <scene sceneID="T9c-V9-bOh">
+            <objects>
+                <viewController id="F2L-5E-pMb" customClass="QuoteListViewController" customModule="Motivation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PXW-nz-aGx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theme-1" translatesAutoresizingMaskIntoConstraints="NO" id="WD4-io-dxW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="FdS-Fj-7aB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="F2L-5E-pMb" id="dpg-4P-pHE"/>
+                                    <outlet property="delegate" destination="F2L-5E-pMb" id="rLX-fE-WjW"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fks-r1-lGV">
+                                <rect key="frame" x="349" y="807" width="45" height="45"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Aoj-tw-Jr2"/>
+                                    <constraint firstAttribute="height" constant="45" id="ln2-AD-QUp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="person" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnMotivationPressed:" destination="F2L-5E-pMb" eventType="touchUpInside" id="S7u-lh-94p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amX-Ma-72S">
+                                <rect key="frame" x="289" y="807" width="45" height="45"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="5r5-Yg-BaV"/>
+                                    <constraint firstAttribute="height" constant="45" id="Ugd-rh-7Qc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="paintbrush" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnThemePressed:" destination="F2L-5E-pMb" eventType="touchUpInside" id="6GN-0m-HHp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rlR-mO-61d"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FdS-Fj-7aB" secondAttribute="trailing" id="2XR-Cb-2yT"/>
+                            <constraint firstItem="rlR-mO-61d" firstAttribute="trailing" secondItem="fks-r1-lGV" secondAttribute="trailing" constant="20" id="3eg-2s-jIL"/>
+                            <constraint firstAttribute="bottom" secondItem="FdS-Fj-7aB" secondAttribute="bottom" id="5Fx-PB-72X"/>
+                            <constraint firstItem="amX-Ma-72S" firstAttribute="bottom" secondItem="fks-r1-lGV" secondAttribute="bottom" id="69r-ev-3qL"/>
+                            <constraint firstItem="rlR-mO-61d" firstAttribute="trailing" secondItem="WD4-io-dxW" secondAttribute="trailing" id="9X1-ab-Dgx"/>
+                            <constraint firstItem="FdS-Fj-7aB" firstAttribute="leading" secondItem="rlR-mO-61d" secondAttribute="leading" id="ExS-pj-jcF"/>
+                            <constraint firstItem="amX-Ma-72S" firstAttribute="top" secondItem="fks-r1-lGV" secondAttribute="top" id="P6U-1A-6wi"/>
+                            <constraint firstAttribute="bottom" secondItem="WD4-io-dxW" secondAttribute="bottom" id="fZ0-hS-Bkg"/>
+                            <constraint firstItem="fks-r1-lGV" firstAttribute="leading" secondItem="amX-Ma-72S" secondAttribute="trailing" constant="15" id="hM7-Og-b0c"/>
+                            <constraint firstItem="FdS-Fj-7aB" firstAttribute="top" secondItem="PXW-nz-aGx" secondAttribute="top" id="iRm-uh-oww"/>
+                            <constraint firstItem="WD4-io-dxW" firstAttribute="top" secondItem="PXW-nz-aGx" secondAttribute="top" id="in0-7O-Ei7"/>
+                            <constraint firstItem="WD4-io-dxW" firstAttribute="leading" secondItem="rlR-mO-61d" secondAttribute="leading" id="pCK-9n-yw5"/>
+                            <constraint firstItem="rlR-mO-61d" firstAttribute="bottom" secondItem="fks-r1-lGV" secondAttribute="bottom" constant="10" id="uEX-CY-2Ks"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="WD4-io-dxW" id="NXc-eJ-khl"/>
+                        <outlet property="tableView" destination="FdS-Fj-7aB" id="CNB-o9-zLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kme-nb-L7s" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="817"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paintbrush" catalog="system" width="122" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="theme-1" width="1333.3333740234375" height="1772.3333740234375"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

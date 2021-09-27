@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="952" id="SaS-lm-isu" customClass="VideoTableViewCell" customModule="WhatsApp_Status" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="530" height="952"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SaS-lm-isu" id="vkX-cg-tGJ">
+                <rect key="frame" x="0.0" y="0.0" width="530" height="952"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa8-mo-1Vz">
+                        <rect key="frame" x="0.0" y="0.0" width="530" height="952"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-FB-xrf">
+                        <rect key="frame" x="210" y="801" width="110" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVc-GB-jZc">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="UZD-zi-Cw5"/>
+                                    <constraint firstAttribute="height" constant="40" id="ssv-eL-khA"/>
+                                </constraints>
+                                <state key="normal" image="icon_share"/>
+                                <connections>
+                                    <action selector="btnSelectTapped:" destination="SaS-lm-isu" eventType="touchUpInside" id="Ui4-Zq-I05"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2x-3t-RY6">
+                                <rect key="frame" x="70" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Nro-Uk-eRE"/>
+                                    <constraint firstAttribute="height" constant="40" id="RmW-Jl-8do"/>
+                                </constraints>
+                                <state key="normal" image="icon_heart"/>
+                                <state key="selected" image="icon_heart-fill"/>
+                                <connections>
+                                    <action selector="btnLikeTapped:" destination="SaS-lm-isu" eventType="touchUpInside" id="0g2-3D-Vnz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BdW-hD-OHv">
+                        <rect key="frame" x="215" y="426" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="EhE-X6-X7c"/>
+                            <constraint firstAttribute="height" constant="100" id="UYR-eW-OWd"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qa8-mo-1Vz" secondAttribute="bottom" id="56c-Ct-Llz"/>
+                    <constraint firstItem="qa8-mo-1Vz" firstAttribute="leading" secondItem="vkX-cg-tGJ" secondAttribute="leading" id="DQu-4a-mcg"/>
+                    <constraint firstItem="1L5-FB-xrf" firstAttribute="centerX" secondItem="vkX-cg-tGJ" secondAttribute="centerX" id="Sxw-Bk-6CI"/>
+                    <constraint firstItem="BdW-hD-OHv" firstAttribute="centerX" secondItem="vkX-cg-tGJ" secondAttribute="centerX" id="TEq-tl-Q7v"/>
+                    <constraint firstItem="BdW-hD-OHv" firstAttribute="centerY" secondItem="vkX-cg-tGJ" secondAttribute="centerY" id="Z5n-5K-ALM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1L5-FB-xrf" secondAttribute="bottom" constant="100" id="rqS-rB-g8w"/>
+                    <constraint firstItem="qa8-mo-1Vz" firstAttribute="top" secondItem="vkX-cg-tGJ" secondAttribute="top" id="v2d-MT-ox1"/>
+                    <constraint firstAttribute="trailing" secondItem="qa8-mo-1Vz" secondAttribute="trailing" id="xFf-8i-tjC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnHeart" destination="r2x-3t-RY6" id="rlR-Vj-BfF"/>
+                <outlet property="btnShare" destination="iVc-GB-jZc" id="CAW-ID-SfJ"/>
+                <outlet property="imgHeart" destination="BdW-hD-OHv" id="11d-sB-deF"/>
+                <outlet property="imgHeartHeightConstraint" destination="UYR-eW-OWd" id="HzM-QT-sfK"/>
+                <outlet property="imgHeartWidthConstraint" destination="EhE-X6-X7c" id="R1W-Un-LPh"/>
+            </connections>
+            <point key="canvasLocation" x="-223.18840579710147" y="310.71428571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_heart" width="45" height="45"/>
+        <image name="icon_heart-fill" width="45" height="45"/>
+        <image name="icon_share" width="45" height="45"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
