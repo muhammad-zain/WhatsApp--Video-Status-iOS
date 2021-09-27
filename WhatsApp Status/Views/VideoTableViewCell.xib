@@ -74,6 +74,7 @@
                 <outlet property="imgHeart" destination="BdW-hD-OHv" id="11d-sB-deF"/>
                 <outlet property="imgHeartHeightConstraint" destination="UYR-eW-OWd" id="HzM-QT-sfK"/>
                 <outlet property="imgHeartWidthConstraint" destination="EhE-X6-X7c" id="R1W-Un-LPh"/>
+                <outlet property="videoView" destination="qa8-mo-1Vz" id="qgQ-zX-jVW"/>
             </connections>
             <point key="canvasLocation" x="-223.18840579710147" y="310.71428571428572"/>
         </tableViewCell>

@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import MobileVLCKit
 
 class VideoTableViewCell: UITableViewCell, MultiTappable {
     
-    @IBOutlet weak var lblQuote: UILabel!
+    @IBOutlet weak var videoView: UIView!
     @IBOutlet weak var btnShare: UIButton!
     @IBOutlet weak var btnHeart: UIButton!
     @IBOutlet weak var imgHeart: UIImageView!
@@ -29,6 +30,11 @@ class VideoTableViewCell: UITableViewCell, MultiTappable {
     
     private let unlikedScale: CGFloat = 0.7
     private let likedScale: CGFloat = 1.3
+    
+    let player: VLCMediaPlayer = {
+        let player = VLCMediaPlayer()
+        return player
+    }()
     
 //    var quote: QuoteModel? {
 //        didSet {
@@ -51,6 +57,9 @@ class VideoTableViewCell: UITableViewCell, MultiTappable {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        
+        player.drawable = videoView
+        player.delegate = self
         
         initMultiTap()
         
@@ -90,6 +99,12 @@ class VideoTableViewCell: UITableViewCell, MultiTappable {
             self.imgHeart.transform = CGAffineTransform.identity
           })
         })
+    }
+    
+    func playURL(url : String) {
+        player.media = VLCMedia(url : URL(string : url)!)
+        player.play()
+
     }
     
 //    private func animate() {
@@ -137,4 +152,16 @@ extension VideoTableViewCell: MultiTappableDelegate {
     func singleTapDetected(in view: MultiTappable) { self.delegate?.singleTapDetected(in: self) }
     func doubleTapDetected(in view: MultiTappable) { self.delegate?.doubleTapDetected(in: self) }
     func longTapDetected(in view: MultiTappable) { self.delegate?.longTapDetected(in: self) }
+}
+
+
+extension VideoTableViewCell: VLCMediaPlayerDelegate {
+    
+    func mediaPlayerStateChanged(_ aNotification: Notification!) {
+        
+        if self.player.state == .error {
+        }
+        
+    }
+    
 }

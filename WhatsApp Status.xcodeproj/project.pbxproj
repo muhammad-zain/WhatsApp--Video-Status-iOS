@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,10 +17,25 @@
 		6217D4DC2702217A0041D586 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6217D4DA2702217A0041D586 /* VideoTableViewCell.xib */; };
 		6217D4DD2702217A0041D586 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217D4DB2702217A0041D586 /* VideoTableViewCell.swift */; };
 		6217D4DF270221AF0041D586 /* MultiTappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217D4DE270221AF0041D586 /* MultiTappable.swift */; };
-		B072CDEF7655CEE885D1CDD1 /* Pods_WhatsApp_Status.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D09E770EB8E93CDBB4816C1 /* Pods_WhatsApp_Status.framework */; };
+		6217D4E1270229F40041D586 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4E0270229F40041D586 /* CoreMedia.framework */; };
+		6217D4E3270229FA0041D586 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4E2270229FA0041D586 /* UIKit.framework */; };
+		6217D4E527022A000041D586 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4E427022A000041D586 /* QuartzCore.framework */; };
+		6217D4E727022A070041D586 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4E627022A070041D586 /* VideoToolbox.framework */; };
+		6217D4E927022A0E0041D586 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4E827022A0E0041D586 /* AVFoundation.framework */; };
+		6217D4EB27022A1A0041D586 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4EA27022A1A0041D586 /* Security.framework */; };
+		6217D4ED27022A220041D586 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4EC27022A220041D586 /* CoreFoundation.framework */; };
+		6217D4EF27022A2C0041D586 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4EE27022A2C0041D586 /* CoreGraphics.framework */; };
+		6217D4F127022A320041D586 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4F027022A320041D586 /* CoreText.framework */; };
+		6217D4F327022A3C0041D586 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4F227022A3C0041D586 /* AudioToolbox.framework */; };
+		6217D4F527022A410041D586 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4F427022A410041D586 /* CFNetwork.framework */; };
+		6217D4F727022A4C0041D586 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4F627022A4C0041D586 /* CoreVideo.framework */; };
+		6217D4F927022A550041D586 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4F827022A550041D586 /* Foundation.framework */; };
+		6217D4FB27022A5B0041D586 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6217D4FA27022A5B0041D586 /* OpenGLES.framework */; };
+		8E7605C3C9B6382C0B79C851 /* Pods_WhatsApp_Status.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E77F99C7AAC0E3E6931737 /* Pods_WhatsApp_Status.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39E77F99C7AAC0E3E6931737 /* Pods_WhatsApp_Status.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Status.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6217D4BD27021FE10041D586 /* WhatsApp Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatsApp Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6217D4C027021FE10041D586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6217D4C227021FE10041D586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +48,22 @@
 		6217D4DA2702217A0041D586 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		6217D4DB2702217A0041D586 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		6217D4DE270221AF0041D586 /* MultiTappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiTappable.swift; sourceTree = "<group>"; };
-		8D09E770EB8E93CDBB4816C1 /* Pods_WhatsApp_Status.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Status.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5943F8245EF921BE5C072E /* Pods-WhatsApp Status.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Status.debug.xcconfig"; path = "Target Support Files/Pods-WhatsApp Status/Pods-WhatsApp Status.debug.xcconfig"; sourceTree = "<group>"; };
-		FF8483037EC99590AC2EAC95 /* Pods-WhatsApp Status.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Status.release.xcconfig"; path = "Target Support Files/Pods-WhatsApp Status/Pods-WhatsApp Status.release.xcconfig"; sourceTree = "<group>"; };
+		6217D4E0270229F40041D586 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6217D4E2270229FA0041D586 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6217D4E427022A000041D586 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6217D4E627022A070041D586 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		6217D4E827022A0E0041D586 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6217D4EA27022A1A0041D586 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6217D4EC27022A220041D586 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6217D4EE27022A2C0041D586 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6217D4F027022A320041D586 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		6217D4F227022A3C0041D586 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6217D4F427022A410041D586 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6217D4F627022A4C0041D586 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6217D4F827022A550041D586 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6217D4FA27022A5B0041D586 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		853D7C4F45922E0026244F55 /* Pods-WhatsApp Status.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Status.release.xcconfig"; path = "Target Support Files/Pods-WhatsApp Status/Pods-WhatsApp Status.release.xcconfig"; sourceTree = "<group>"; };
+		B1FE7F0558E2462D02095FBF /* Pods-WhatsApp Status.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Status.debug.xcconfig"; path = "Target Support Files/Pods-WhatsApp Status/Pods-WhatsApp Status.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,28 +71,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B072CDEF7655CEE885D1CDD1 /* Pods_WhatsApp_Status.framework in Frameworks */,
+				6217D4FB27022A5B0041D586 /* OpenGLES.framework in Frameworks */,
+				6217D4F927022A550041D586 /* Foundation.framework in Frameworks */,
+				6217D4F727022A4C0041D586 /* CoreVideo.framework in Frameworks */,
+				6217D4F527022A410041D586 /* CFNetwork.framework in Frameworks */,
+				6217D4F327022A3C0041D586 /* AudioToolbox.framework in Frameworks */,
+				6217D4F127022A320041D586 /* CoreText.framework in Frameworks */,
+				6217D4EF27022A2C0041D586 /* CoreGraphics.framework in Frameworks */,
+				6217D4ED27022A220041D586 /* CoreFoundation.framework in Frameworks */,
+				6217D4EB27022A1A0041D586 /* Security.framework in Frameworks */,
+				6217D4E927022A0E0041D586 /* AVFoundation.framework in Frameworks */,
+				6217D4E727022A070041D586 /* VideoToolbox.framework in Frameworks */,
+				6217D4E527022A000041D586 /* QuartzCore.framework in Frameworks */,
+				6217D4E3270229FA0041D586 /* UIKit.framework in Frameworks */,
+				6217D4E1270229F40041D586 /* CoreMedia.framework in Frameworks */,
+				8E7605C3C9B6382C0B79C851 /* Pods_WhatsApp_Status.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D76F273043DB3D698145451 /* Frameworks */ = {
+		2C3D407B6B2218AB8E3A3DE3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8D09E770EB8E93CDBB4816C1 /* Pods_WhatsApp_Status.framework */,
+				B1FE7F0558E2462D02095FBF /* Pods-WhatsApp Status.debug.xcconfig */,
+				853D7C4F45922E0026244F55 /* Pods-WhatsApp Status.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5D2F257F84D75D5DFA775ADF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EC5943F8245EF921BE5C072E /* Pods-WhatsApp Status.debug.xcconfig */,
-				FF8483037EC99590AC2EAC95 /* Pods-WhatsApp Status.release.xcconfig */,
-			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,8 +106,8 @@
 			children = (
 				6217D4BF27021FE10041D586 /* WhatsApp Status */,
 				6217D4BE27021FE10041D586 /* Products */,
-				5D2F257F84D75D5DFA775ADF /* Pods */,
-				2D76F273043DB3D698145451 /* Frameworks */,
+				2C3D407B6B2218AB8E3A3DE3 /* Pods */,
+				D973056E6826AEC58FA9CCE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +153,28 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D973056E6826AEC58FA9CCE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6217D4FA27022A5B0041D586 /* OpenGLES.framework */,
+				6217D4F827022A550041D586 /* Foundation.framework */,
+				6217D4F627022A4C0041D586 /* CoreVideo.framework */,
+				6217D4F427022A410041D586 /* CFNetwork.framework */,
+				6217D4F227022A3C0041D586 /* AudioToolbox.framework */,
+				6217D4F027022A320041D586 /* CoreText.framework */,
+				6217D4EE27022A2C0041D586 /* CoreGraphics.framework */,
+				6217D4EC27022A220041D586 /* CoreFoundation.framework */,
+				6217D4EA27022A1A0041D586 /* Security.framework */,
+				6217D4E827022A0E0041D586 /* AVFoundation.framework */,
+				6217D4E627022A070041D586 /* VideoToolbox.framework */,
+				6217D4E427022A000041D586 /* QuartzCore.framework */,
+				6217D4E2270229FA0041D586 /* UIKit.framework */,
+				6217D4E0270229F40041D586 /* CoreMedia.framework */,
+				39E77F99C7AAC0E3E6931737 /* Pods_WhatsApp_Status.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,11 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6217D4D127021FE40041D586 /* Build configuration list for PBXNativeTarget "WhatsApp Status" */;
 			buildPhases = (
-				47FAA897785F1CBF9A9CB547 /* [CP] Check Pods Manifest.lock */,
+				A4C321D6C268BFC5B4A84BFB /* [CP] Check Pods Manifest.lock */,
 				6217D4B927021FE10041D586 /* Sources */,
 				6217D4BA27021FE10041D586 /* Frameworks */,
 				6217D4BB27021FE10041D586 /* Resources */,
-				89F726A2EFB68A6D49FA301C /* [CP] Embed Pods Frameworks */,
+				B14A4EF0D94EC81CE8DA632D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +244,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47FAA897785F1CBF9A9CB547 /* [CP] Check Pods Manifest.lock */ = {
+		A4C321D6C268BFC5B4A84BFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,7 +266,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		89F726A2EFB68A6D49FA301C /* [CP] Embed Pods Frameworks */ = {
+		B14A4EF0D94EC81CE8DA632D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,12 +439,13 @@
 		};
 		6217D4D227021FE40041D586 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC5943F8245EF921BE5C072E /* Pods-WhatsApp Status.debug.xcconfig */;
+			baseConfigurationReference = B1FE7F0558E2462D02095FBF /* Pods-WhatsApp Status.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZLDSYFW5U;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "WhatsApp Status/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,12 +460,13 @@
 		};
 		6217D4D327021FE40041D586 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF8483037EC99590AC2EAC95 /* Pods-WhatsApp Status.release.xcconfig */;
+			baseConfigurationReference = 853D7C4F45922E0026244F55 /* Pods-WhatsApp Status.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZLDSYFW5U;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "WhatsApp Status/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
